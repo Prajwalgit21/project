@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            text-align: center;
+            padding: 50px;
+        }
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .hidden-message {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card p-4">
+            <h1 class="text-danger">🎉 Happy Birthday Aanya! 🎂</h1>
+            <p class="lead">Wishing you a day filled with love, laughter, and joy!</p>
+            <button class="btn btn-primary" onclick="revealMessage()">Click for a Surprise!</button>
+            <p id="hiddenMessage" class="hidden-message text-success mt-3"> "Happy Birthday My Chidku bai.! 🎂🎉 Tumhari life hamesha khushiyon se bhari rahe. 
+            Jo bhi sapne dekho,sab sach ho jaye. Tumhari smile kabhi na jaye, aur har din special bane! 💖✨ Enjoy your day!"<br>
+            You are truly special!.   💖</p>
+        </div>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center; text-align: center;">
+    <div id="birthdayCarousel" class="carousel slide mt-4" data-bs-ride="carousel" style="width: 400px; float: left;">
+        <div>
+            <h2 class="text-black">A Special Message for You!</h2>
+            <p class="text-dark" >Aanya! i feel so lucky to to have a friend like you in my life. You are my special person for me. I promise In every moment at any cost I am always stay with you Aanya.
+                 I know you are YEDE Mulgi but point is that,You are My YEDE Mulgi.<br>May your all dreams comes true.Wishing you a great career,Always stay Happy :) 🎉🎂</p>
+        </div>
+
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img2.jpg" class="d-block w-100" alt="Image 1">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="img3.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img4.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img5.jpg" class="d-block w-100" alt="Image 4">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="img6.jpg" class="d-block w-100" alt="Image 4">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="img7.jpg" class="d-block w-100" alt="Image 4">
+                
+            </div>
+            <p class="text-dark">May your day be filled with love, laughter, and all the happiness in the world!
+                 🎉🎂</p>
+            
+            
+        </div>
+        <a class="carousel-control-prev" href="#birthdayCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#birthdayCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script>
+
+        function revealMessage() {
+            document.getElementById("hiddenMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
